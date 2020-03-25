@@ -5,12 +5,25 @@ git status
 查看分支
 git branch -a
 
+仓库创建
+1、在github个人中心里面点加号选择New repository，然后得到一个仓库地址
+2、git remote add origin 仓库地址
+3、git push -u origin master
+
+避免每次提交都要输入git账号和密码
+git地址修改为ssh的地址
+1、移除https的方式
+git remote rm origin
+2、修改新地址
+git remote add origin ssh地址
+
 代码提交
 1、git add . （提交全部修改或新增文件）或者git add 文件名（提交单个文件）
 2、git commit -m '当前提交说明'
 提交远程仓库 
 git remote -v（查看远程分支）
 3、git push 或者 git push origin 分支名
+
 创建并切换到新分支
 git checkout -b 分支名
 
