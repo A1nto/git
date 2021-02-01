@@ -1,0 +1,16 @@
+1、安装whistle
+npm install whistle -g // 安装whistle   我这里用2.4.15版本
+2、安装whistle.inspect 
+npm install -g whistle.inspect
+3、在手机上调试
+	1、w2 start ，然后打开ip加域名的地址。
+	2、在Rules添加 
+	
+		* whistle.inspect://eruda
+		* log://
+		
+	3、点击HTTPS出现弹窗全选，然后用手机扫码下载证书。
+	4、链接局域网，配置手动代理，域名端口为w2 start启动时的ip+port
+	
+注意： 在不用调试时，请关闭相应代理，否则不能上网
+	
